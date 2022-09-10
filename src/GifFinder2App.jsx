@@ -17,20 +17,16 @@ export const GifFinder2App = () => {
     <>
       <h1>GifFinder2App</h1>
       <AddCategory
-        //setCategories = { setCategories }
         onNewCategory = { (value) => onAddCategory(value) }
       />
-      <ol>
-        {
-          categories.map( category => {
-            // return <li key={ category }>{ category }</li>;
-            return <GifGrid
-              key={ category }
-              category={ category }
-            />
-          })
-        }
-      </ol>
+      {
+        categories.map( category => {
+          return <GifGrid
+            key={ category }
+            category={ category }
+          />
+        })
+      }
     </>
   )
 }
