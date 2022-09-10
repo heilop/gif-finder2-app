@@ -6,6 +6,10 @@ export const GifFinder2App = () => {
   const [categories, setCategories] = useState(['Better Call Saul', 'Breaking bad']);
 
   const onAddCategory = ( newCategory) => {
+
+    if (categories.includes(newCategory)) {
+      return;
+    }
     setCategories([newCategory, ...categories]);
   }
   return (
