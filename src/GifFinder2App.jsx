@@ -4,7 +4,7 @@ import { GifGrid } from './components/GifGrid';
 
 export const GifFinder2App = () => {
 
-  const [categories, setCategories] = useState(['Better Call Saul', 'Breaking bad']);
+  const [categories, setCategories] = useState(['Better Call Saul']);
 
   const onAddCategory = ( newCategory) => {
 
